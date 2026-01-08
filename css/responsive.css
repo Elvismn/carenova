@@ -1,0 +1,321 @@
+/* Additional responsive adjustments */
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding: 8rem 0 4rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 7rem 0 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+    
+    /* Form adjustments */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    /* Card adjustments */
+    .service-card,
+    .category-card,
+    .plan-card,
+    .case-study,
+    .team-member,
+    .contact-info-card {
+        padding: 1.5rem;
+    }
+    
+    .service-detail-card,
+    .equipment-inquiry-form,
+    .order-form,
+    .service-request-form,
+    .consultation-form,
+    .quote-form,
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    /* Grid adjustments */
+    .services-preview-grid,
+    .features-grid,
+    .values-grid,
+    .categories-grid,
+    .brands-grid,
+    .services-grid,
+    .plans-grid,
+    .coverage-list,
+    .case-studies-grid,
+    .team-grid,
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Layout adjustments */
+    .overview-content,
+    .commitment-content,
+    .guide-content,
+    .quality-content,
+    .integrated-content,
+    .location-content,
+    .hours-content,
+    .newsletter-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-detail-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .coverage-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Text adjustments */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 6rem 0 2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-padding {
+        padding: 2rem 0;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Smaller image placeholders */
+    .image-placeholder {
+        height: 250px;
+        font-size: 2rem;
+    }
+    
+    .image-placeholder.small {
+        height: 150px;
+        font-size: 1.5rem;
+    }
+    
+    .map-placeholder {
+        height: 300px;
+        font-size: 1.5rem;
+    }
+    
+    /* Form field adjustments */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+    
+    /* Button adjustments */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-contact .contact-item {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Emergency contact adjustments */
+    .emergency-content,
+    .resources-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .emergency-contact,
+    .resource {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .emergency-actions {
+        flex-direction: column;
+    }
+    
+    .emergency-actions .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .trust-indicators {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .service-actions {
+        flex-direction: column;
+    }
+    
+    .service-actions .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .footer,
+    .cta-section,
+    .hero-buttons,
+    .back-to-top,
+    .breadcrumb,
+    .menu-toggle {
+        display: none !important;
+    }
+    
+    .hero,
+    .section-padding {
+        padding: 1rem 0 !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    img {
+        max-width: 100% !important;
+    }
+    
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+}
