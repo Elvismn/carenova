@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Carenova Biotech</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="View our gallery showcasing Carenova Biotech's team in action, medical equipment portfolio, and healthcare services delivery across East Africa.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Lightbox CSS (We'll create our own) -->
+    <style>
+        /* Gallery-specific styles will be added to pages.css */
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpeg" alt="Carenova Biotech Logo" class="logo-img">
+                    <span class="logo-text">Carenova Biotech</span>
+                </a>
+                
+                <!-- Main Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link dropdown-toggle">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="equipment.html"><i class="fas fa-x-ray"></i> Biomedical Equipment</a></li>
+                            <li><a href="consumables.html"><i class="fas fa-box-open"></i> Medical Consumables</a></li>
+                            <li><a href="maintenance.html"><i class="fas fa-tools"></i> Equipment Maintenance</a></li>
+                            <li><a href="consultancy.html"><i class="fas fa-chalkboard-teacher"></i> Healthcare Consultancy</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    
+                    <!-- CTA Button -->
+                    <li class="nav-item cta-btn">
+                        <a href="contact.html#quote" class="btn btn-primary">
+                            <i class="fas fa-file-invoice"></i> Request Quote
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== BREADCRUMB ===== -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a> &gt;
+                <span>Gallery</span>
+            </div>
+        </nav>
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero gallery-hero">
+            <div class="container">
+                <h1>Our Gallery</h1>
+                <p>Visual showcase of our team, equipment, and healthcare solutions in action</p>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY INTRODUCTION ===== -->
+        <section class="gallery-intro section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Visual Excellence in Healthcare</h2>
+                    <p class="section-subtitle">
+                        Explore our gallery to see Carenova Biotech in action - from our dedicated team 
+                        to state-of-the-art equipment and successful healthcare implementations.
+                    </p>
+                </div>
+                
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h3>Behind the Scenes at Carenova</h3>
+                        <p>
+                            At Carenova Biotech, we believe in transparency and showcasing our commitment 
+                            to healthcare excellence. This gallery provides a glimpse into our daily operations, 
+                            the equipment we work with, and the professional services we deliver across East Africa.
+                        </p>
+                        <div class="gallery-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Professional Team</h4>
+                                    <p>Dedicated experts in action</p>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-microscope"></i>
+                                <div>
+                                    <h4>Advanced Equipment</h4>
+                                    <p>State-of-the-art medical technology</p>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-handshake"></i>
+                                <div>
+                                    <h4>Quality Service</h4>
+                                    <p>Excellence in healthcare delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-image">
+                        <img src="images/crew/Teamatmeeting.jpg" alt="Carenova Biotech Team Meeting" class="intro-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY FILTER ===== -->
+        <section class="gallery-filter bg-light">
+            <div class="container">
+                <div class="filter-controls">
+                    <h3>Browse Our Gallery</h3>
+                    <p>Filter images by category</p>
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th"></i> All Photos
+                        </button>
+                        <button class="filter-btn" data-filter="team">
+                            <i class="fas fa-users"></i> Our Team
+                        </button>
+                        <button class="filter-btn" data-filter="equipment">
+                            <i class="fas fa-microscope"></i> Equipment
+                        </button>
+                        <button class="filter-btn" data-filter="services">
+                            <i class="fas fa-handshake"></i> Services
+                        </button>
+                        <button class="filter-btn" data-filter="about">
+                            <i class="fas fa-building"></i> About Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY GRID ===== -->
+        <section class="gallery-grid-section section-padding">
+            <div class="container">
+                <!-- Team Gallery -->
+                <div class="gallery-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-users"></i> Our Team in Action
+                    </h3>
+                    <p class="category-description">
+                        Meet our dedicated professionals working to deliver exceptional healthcare solutions.
+                    </p>
+                    
+                    <div class="masonry-grid">
+                        <!-- Team Image 1 -->
+                        <div class="gallery-item team" data-category="team">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/crew/Crewatwork4.jpg" alt="Carenova team installing medical equipment" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/crew/Crewatwork4.jpg" data-title="Team Installing Medical Equipment">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Equipment Installation</h4>
+                                    <p>Our technical team assesing advanced biomedical equipment scheduled for installation.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-calendar"></i> Recent</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Image 2 -->
+                        <div class="gallery-item team" data-category="team">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/crew/Crewatwork3.jpg" alt="Carenova team conducting equipment maintenance" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/crew/Crewatwork3.jpg" data-title="Equipment Maintenance Session">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Preventive Maintenance</h4>
+                                    <p>Our engineers conducting scheduled maintenance on diagnostic imaging equipment.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-calendar"></i> Recent</span>
+                                        <span><i class="fas fa-tools"></i> Maintenance</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Image 3 -->
+                        <div class="gallery-item team" data-category="team">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/crew/Crewatwork2.jpg" alt="Carenova team training healthcare staff" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/crew/Crewatwork2.jpg" data-title="Staff Training Session">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Staff Training</h4>
+                                    <p>Our staff posing for a photo after a training on the operation of new medical equipment.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-calendar"></i> Recent</span>
+                                        <span><i class="fas fa-user-graduate"></i> Training</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Image 4 -->
+                        <div class="gallery-item team" data-category="team">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/crew/Teamatmeeting.jpg" alt="Carenova team at a healthcare conference" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/crew/Teamatmeeting.jpg" data-title="Healthcare Conference Participation">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Industry Conference</h4>
+                                    <p>Our team participating in a regional healthcare technology conference.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-calendar"></i> Recent</span>
+                                        <span><i class="fas fa-users"></i> Conference</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Meeting -->
+                        <div class="gallery-item team" data-category="team">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/crew/Teamatmeeting.jpg" alt="Carenova team strategic planning meeting" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/crew/Teamatmeeting.jpg" data-title="Strategic Planning Meeting">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Strategic Planning</h4>
+                                    <p>Our management team discussing healthcare solutions for East Africa.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-calendar"></i> Recent</span>
+                                        <span><i class="fas fa-briefcase"></i> Planning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Equipment Gallery -->
+                <div class="gallery-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-microscope"></i> Biomedical Equipment Portfolio
+                    </h3>
+                    <p class="category-description">
+                        Explore our range of advanced medical equipment and technology solutions.
+                    </p>
+                    
+                    <div class="masonry-grid">
+                        <!-- Equipment 1 -->
+                        <div class="gallery-item equipment" data-category="equipment">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/equipment/Equipment1.jpg" alt="Diagnostic Imaging Equipment" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/equipment/Equipment1.jpg" data-title="Diagnostic Imaging System">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Diagnostic Imaging</h4>
+                                    <p>Advanced imaging systems for accurate medical diagnosis and treatment planning.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-x-ray"></i> Imaging</span>
+                                        <span><i class="fas fa-hospital"></i> Diagnostic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Equipment 2 -->
+                        <div class="gallery-item equipment" data-category="equipment">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/equipment/Equipment2.jpg" alt="Patient Monitoring Systems" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/equipment/Equipment2.jpg" data-title="Patient Monitoring Equipment">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Patient Monitoring</h4>
+                                    <p>Comprehensive monitoring solutions for critical care and general wards.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-heartbeat"></i> Monitoring</span>
+                                        <span><i class="fas fa-procedures"></i> ICU</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Equipment 3 -->
+                        <div class="gallery-item equipment" data-category="equipment">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/equipment/Equipment3.jpg" alt="Laboratory Analyzers" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/equipment/Equipment3.jpg" data-title="Laboratory Diagnostic Equipment">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Laboratory Equipment</h4>
+                                    <p>Precision laboratory analyzers for clinical diagnostics and research.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-flask"></i> Laboratory</span>
+                                        <span><i class="fas fa-vial"></i> Diagnostics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Equipment 4 -->
+                        <div class="gallery-item equipment" data-category="equipment">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/equipment/Equipment4.jpg" alt="Therapeutic Medical Equipment" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/equipment/Equipment4.jpg" data-title="Therapeutic Medical Equipment">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Therapeutic Equipment</h4>
+                                    <p>Treatment and rehabilitation equipment for comprehensive patient care.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-procedures"></i> Therapeutic</span>
+                                        <span><i class="fas fa-heart"></i> Treatment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Equipment 5 -->
+                        <div class="gallery-item equipment" data-category="equipment">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/equipment/Equipment5.jpg" alt="Emergency Medical Equipment" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/equipment/Equipment5.jpg" data-title="Emergency & Critical Care Equipment">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Emergency Care</h4>
+                                    <p>Life-saving equipment for emergency and intensive care units.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-ambulance"></i> Emergency</span>
+                                        <span><i class="fas fa-first-aid"></i> Critical Care</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Equipment 6 -->
+                        <div class="gallery-item equipment" data-category="equipment">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/equipment/Equipment6.jpg" alt="Medical Furniture & Accessories" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/equipment/Equipment6.jpg" data-title="Medical Furniture & Accessories">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Diagnostic Imaging</h4>
+                                    <p>Delivering Quality Imaging solutions for hospitals</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-bed"></i> Furniture</span>
+                                        <span><i class="fas fa-clinic-medical"></i> Facility</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services Gallery -->
+                <div class="gallery-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-handshake"></i> Our Services in Action
+                    </h3>
+                    <p class="category-description">
+                        See how we deliver exceptional healthcare solutions and services.
+                    </p>
+                    
+                    <div class="masonry-grid">
+                        <!-- Service 1 -->
+                        <div class="gallery-item services" data-category="services">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/services/service1.jpg" alt="Healthcare service delivery" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/services/service1.jpg" data-title="Healthcare Service Delivery">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Service Excellence</h4>
+                                    <p>Delivering comprehensive healthcare solutions with precision and care.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-handshake"></i> Service</span>
+                                        <span><i class="fas fa-award"></i> Excellence</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 2 -->
+                        <div class="gallery-item services" data-category="services">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/services/service2.jpg" alt="Medical consultancy session" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/services/service2.jpg" data-title="Medical Consultancy Session">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Expert Consultancy</h4>
+                                    <p>Providing strategic healthcare consultancy for institutional excellence.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-chalkboard-teacher"></i> Consultancy</span>
+                                        <span><i class="fas fa-lightbulb"></i> Strategy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Gallery -->
+                <div class="gallery-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-building"></i> About Carenova Biotech
+                    </h3>
+                    <p class="category-description">
+                        Get to know our company identity and brand presence.
+                    </p>
+                    
+                    <div class="masonry-grid">
+                        <!-- Hero Home -->
+                        <div class="gallery-item about" data-category="about">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/hero/hero-home.jpeg" alt="Carenova Biotech Healthcare Solutions" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/hero/hero-home.jpeg" data-title="Healthcare Solutions">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Our Mission</h4>
+                                    <p>Innovating care and delivering trust in healthcare across East Africa.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-bullseye"></i> Mission</span>
+                                        <span><i class="fas fa-heartbeat"></i> Healthcare</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hero About -->
+                        <div class="gallery-item about" data-category="about">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/hero/hero-about.jpeg" alt="Carenova Biotech Trusted Partnerships" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/hero/hero-about.jpeg" data-title="Trusted Healthcare Partnerships">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Our Vision</h4>
+                                    <p>Building lasting partnerships for healthcare excellence in the region.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-eye"></i> Vision</span>
+                                        <span><i class="fas fa-handshake"></i> Partnership</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Logo -->
+                        <div class="gallery-item about" data-category="about">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="images/logo.jpeg" alt="Carenova Biotech Logo" class="gallery-img">
+                                    <div class="image-overlay">
+                                        <button class="view-btn" data-image="images/logo.jpeg" data-title="Carenova Biotech Logo">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Our Brand</h4>
+                                    <p>Carenova Biotech - Innovating Care. Delivering Trust.</p>
+                                    <div class="image-meta">
+                                        <span><i class="fas fa-trademark"></i> Brand</span>
+                                        <span><i class="fas fa-certificate"></i> Identity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY CTA ===== -->
+        <section class="gallery-cta section-padding bg-light">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="cta-text">
+                        <h2>Want to See More?</h2>
+                        <p>Contact us to arrange a site visit or request more visual documentation of our healthcare solutions.</p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Request More Photos
+                            </a>
+                            <a href="contact.html#quote" class="btn btn-outline">
+                                <i class="fas fa-calendar"></i> Schedule Visit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== LIGHTBOX MODAL ===== -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="closeLightbox">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav prev" id="prevImage">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav next" id="nextImage">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="lightbox-image-container">
+                <img id="lightboxImage" src="" alt="" class="lightbox-img">
+                <div class="lightbox-info">
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.jpeg" alt="Carenova Biotech Logo" class="logo-img">
+                        <span class="logo-text">Carenova Biotech</span>
+                    </a>
+                    <p class="footer-tagline">Innovating Care. Delivering Trust.</p>
+                    <p class="footer-description">
+                        Your trusted partner for biomedical equipment, medical supplies, and healthcare consultancy across East Africa.
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services Links -->
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="equipment.html">Biomedical Equipment</a></li>
+                        <li><a href="consumables.html">Medical Consumables</a></li>
+                        <li><a href="maintenance.html">Equipment Maintenance</a></li>
+                        <li><a href="consultancy.html">Healthcare Consultancy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Topmark House, Buruburu<br>Nairobi, Kenya</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+254 718 395 508</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>
+                            <a href="mailto:info@carenovabiotech.com">info@carenovabiotech.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Carenova Biotech Limited. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
