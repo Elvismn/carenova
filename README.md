@@ -1,136 +1,141 @@
 # Carenova Biotech Website
 
-A professional multi-page website for Carenova Biotech Limited, a medical supplies company based in Nairobi, Kenya.
+## Overview
+
+**Carenova Biotech Limited** is a leading medical supplies company headquartered in Nairobi, Kenya, specializing in comprehensive healthcare solutions across East Africa. Our website serves as a digital platform showcasing our commitment to "Innovating Care. Delivering Trust."
+
+This static website project presents our services, company information, and contact details in a professional, responsive design optimized for both desktop and mobile devices.
+
+## Mission & Vision
+
+### Mission
+To innovate healthcare delivery by providing reliable biomedical equipment, consumables, and consultancy services that empower hospitals, clinics, and professionals to deliver quality patient care with confidence.
+
+### Vision
+To become a trusted leader in medical supplies and healthcare solutions across Kenya, East Africa, and beyond — recognized for innovation, integrity, and excellence in service.
+
+## Core Values
+
+- **Innovation**: Advancing healthcare through modern solutions and cutting-edge technology
+- **Trust**: Building lasting relationships through reliability and transparency
+- **Quality**: Uncompromising standards in every product and service we deliver
+- **Partnership**: Collaborating with clients for mutual growth and success
+- **Care**: Putting patient well-being at the center of all our solutions
+
+## Services
+
+Our website highlights four main service areas:
+
+1. **Biomedical Equipment**
+   - Diagnostic Imaging Systems
+   - Patient Monitoring Equipment
+   - Laboratory Analyzers
+
+2. **Medical Consumables**
+   - Surgical & Medical Supplies
+   - Diagnostic Reagents
+   - Personal Protective Equipment
+
+3. **Equipment Maintenance**
+   - Scheduled Preventive Maintenance
+   - 24/7 Emergency Repairs
+   - Calibration & Certification
+
+4. **Healthcare Consultancy**
+   - Hospital Setup & Planning
+   - Regulatory Compliance
+   - Staff Training & Development
+
+## Technology Stack
+
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Styling**: Custom CSS with responsive design
+- **Fonts**: Inter and Poppins (Google Fonts)
+- **Icons**: Font Awesome 6.4.0
+- **Architecture**: Static website with no backend dependencies
 
 ## Project Structure
 
 ```
-carenova-website/
-├── index.html # Homepage
-├── about.html # About Us page
-├── services.html # Services overview
-├── equipment.html # Biomedical equipment catalog
-├── consumables.html # Medical consumables
-├── maintenance.html # Maintenance services
-├── consultancy.html # Healthcare consultancy
-├── contact.html # Contact page
+carenova/
+├── index.html              # Homepage
+├── about.html              # About Us page
+├── services.html           # Services overview
+├── equipment.html          # Biomedical Equipment details
+├── consumables.html        # Medical Consumables details
+├── maintenance.html        # Equipment Maintenance details
+├── consultancy.html        # Healthcare Consultancy details
+├── contact.html            # Contact information and forms
+├── gallery.html            # Photo gallery
 ├── css/
-│ ├── style.css # Global styles
-│ ├── pages.css # Page-specific styles
-│ └── responsive.css # Responsive styles
+│   ├── style.css           # Main stylesheet
+│   ├── pages.css           # Page-specific styles
+│   └── responsive.css      # Mobile responsiveness
 ├── js/
-│ ├── main.js # Global JavaScript
-│ └── forms.js # Form handling JavaScript
+│   ├── main.js             # Main JavaScript functionality
+│   ├── forms.js            # Form handling scripts
+│   └── gallery.js          # Gallery interaction scripts
 ├── images/
-│ ├── logo.jpeg # Company logo
-│ ├── hero/
-│ │ ├── hero-home.jpg # Homepage hero image
-│ │ └── hero-about.jpg # About page hero image
-│ ├── services/
-│ │ ├── equipment.jpg # Equipment service image
-│ │ ├── consumables.jpg # Consumables service image
-│ │ ├── maintenance.jpg # Maintenance service image
-│ │ └── consultancy.jpg # Consultancy service image
-│ └── icons/ # Icon images (if any)
-└── README.md # Project documentation 
+│   ├── logo.jpeg           # Company logo
+│   ├── hero/
+│   │   ├── hero-home.jpeg  # Homepage hero image
+│   │   └── hero-about.jpeg # About page hero image
+│   ├── Crew/               # Team photos
+│   ├── equipment/          # Equipment images
+│   └── services/           # Service-related images
+└── README.md               # This file
 ```
-
 
 ## Features
 
-### 1. **Multi-Page Structure**
-- 8 distinct HTML pages
-- Consistent navigation across all pages
-- Breadcrumb navigation for interior pages
-- Active link highlighting
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **SEO Optimized**: Meta tags, semantic HTML, and structured data
+- **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
+- **Fast Loading**: Lightweight static site with optimized images
+- **Interactive Elements**: Dropdown menus, contact forms, and image galleries
+- **Social Media Integration**: Links to LinkedIn, Twitter, Facebook, and Instagram
+- **Contact Integration**: Direct phone, email, and location information
 
-### 2. **Responsive Design**
-- Mobile-first approach
-- Tablet and desktop optimizations
-- Mobile hamburger menu
-- Flexible grid layouts
+## Getting Started
 
-### 3. **Interactive Elements**
-- Dropdown navigation menus
-- FAQ accordions
-- Form validation
-- Success/error messages
-- Back to top button
-- Smooth scrolling
+### Prerequisites
+- Any modern web browser (Chrome, Firefox, Safari, Edge)
+- No server or build tools required
 
-### 4. **Forms**
-- Equipment inquiry form
-- Consumables order form
-- Maintenance request form
-- Consultancy request form
-- General contact form
-- Quote request form
-- Newsletter subscription
+### Viewing the Website
+1. Clone or download the project files
+2. Navigate to the project root directory
+3. Open `index.html` in your web browser
+4. Navigate through the site using the menu links
 
-### 5. **Styling**
-- Healthcare-focused color scheme
-- Consistent typography
-- Card-based layouts
-- Gradient backgrounds
-- Box shadows and transitions
+### Local Development
+Since this is a static website, you can:
+- Open files directly in a browser for testing
+- Use a local server like `python -m http.server` or `live-server` for development
+- Edit HTML, CSS, and JS files directly in any code editor
 
-## Setup Instructions
+## Contact Information
 
-### 1. **File Structure**
-Create the folder structure as shown above and place all files in their respective directories.
+- **Address**: Topmark House, Buruburu, Nairobi, Kenya
+- **Phone**: +254 718 395 508
+- **Email**: info@carenovabiotech.com / sales@carenovabiotech.com
+- **Website**: https://www.carenovabiotech.com
 
-### 2. **Images**
-Add the following images:
-- `images/logo.jpeg` - Company logo (PNG with transparent background)
-- `images/hero/hero-home.jpg` - Homepage hero image (Recommended: 1200x800)
-- `images/hero/hero-about.jpg` - About page hero image
-- Service images in the `images/services/` directory
+## Contributing
 
-### 3. **Placeholder Images**
-The website uses Font Awesome icons as placeholders. Replace these with actual images by:
-1. Replace `.image-placeholder` divs with `<img>` tags
-2. Update CSS to style actual images
-3. Remove placeholder icon and text
-
-### 4. **Customization**
-- **Colors**: Update CSS variables in `style.css` `:root` section
-- **Fonts**: Update Google Fonts links in HTML head
-- **Content**: Edit text content in HTML files
-- **Contact Info**: Update in contact.html and footer
-
-## Browser Support
-- Chrome (latest 2 versions)
-- Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-- Edge (latest 2 versions)
-- iOS Safari
-- Chrome for Android
-
-## Performance Optimization
-- Minify CSS and JavaScript for production
-- Optimize images (compress, WebP format)
-- Implement lazy loading for images
-- Enable GZIP compression on server
-- Use CDN for Font Awesome and Google Fonts
-
-## SEO Considerations
-1. **Meta Tags**: All pages have proper meta descriptions
-2. **Structured Data**: Add schema.org markup for business information
-3. **Alt Text**: Add alt attributes to all images
-4. **Sitemap**: Create XML sitemap
-5. **Robots.txt**: Create robots.txt file
-6. **Page Speed**: Optimize for Core Web Vitals
-
-## Future Enhancements
-1. **Backend Integration**: Connect forms to email/CRM
-2. **E-commerce**: Add online ordering system
-3. **Blog**: Add news/blog section
-4. **Portfolio**: Add case studies gallery
-5. **Multilingual**: Add language switcher
-6. **Live Chat**: Implement chat support
+This is a company website project. For contributions or improvements:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test across different browsers and devices
+5. Submit a pull request
 
 ## License
+
 © 2024 Carenova Biotech Limited. All rights reserved.
 
-## Support
-For technical support or customization requests, contact the development team.
+## Acknowledgments
+
+- Font Awesome for icons
+- Google Fonts for typography
+- All healthcare partners and clients for their trust and collaboration
