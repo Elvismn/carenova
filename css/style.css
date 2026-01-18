@@ -382,6 +382,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 4px;
+    cursor: pointer;
 }
 
 .dropdown-menu {
@@ -1225,10 +1226,14 @@ a:hover {
         margin: var(--spacing-sm) 0;
         padding: var(--spacing-sm);
         display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
     }
     
     .dropdown-menu.active {
         display: block;
+        max-height: 500px;
     }
     
     .dropdown-menu a {
