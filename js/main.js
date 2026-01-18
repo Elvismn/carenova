@@ -24,6 +24,11 @@ document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
         navMenu.classList.remove('active');
         menuToggle.classList.remove('active');
+        
+        // Also close all dropdowns when clicking outside
+        document.querySelectorAll('.dropdown-menu.active').forEach(menu => {
+            menu.classList.remove('active');
+        });
     }
 });
 
@@ -72,19 +77,65 @@ dropdowns.forEach(dropdown => {
                 }
             });
             
+            // Toggle current dropdown
             menu.classList.toggle('active');
+        } else {
+            // On desktop, if clicking Services link, prevent navigation to keep dropdown open
+            if (toggle.getAttribute('href') === 'services.html') {
+                e.preventDefault();
+            }
         }
+    });
+    
+    // Allow dropdown links to work normally on mobile
+    const dropdownLinks = menu.querySelectorAll('a');
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // On mobile, close dropdown and menu when clicking a dropdown item
+            if (window.innerWidth <= 768) {
+                // Close mobile menu after clicking a dropdown item
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menu.classList.remove('active');
+            }
+        });
     });
 });
 
 // Close mobile dropdowns when clicking elsewhere
 document.addEventListener('click', (e) => {
     if (window.innerWidth <= 768) {
+        // Check if click is outside any dropdown
+        let clickedInsideDropdown = false;
         dropdowns.forEach(dropdown => {
-            if (!dropdown.contains(e.target)) {
-                dropdown.querySelector('.dropdown-menu').classList.remove('active');
+            if (dropdown.contains(e.target)) {
+                clickedInsideDropdown = true;
             }
         });
+        
+        if (!clickedInsideDropdown) {
+            dropdowns.forEach(dropdown => {
+                dropdown.querySelector('.dropdown-menu').classList.remove('active');
+            });
+        }
+    } else {
+        // On desktop, check if clicking outside dropdown
+        let clickedInsideDropdown = false;
+        dropdowns.forEach(dropdown => {
+            if (dropdown.contains(e.target)) {
+                clickedInsideDropdown = true;
+            }
+        });
+        
+        if (!clickedInsideDropdown) {
+            // Reset all dropdowns to hidden state
+            dropdowns.forEach(dropdown => {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                menu.style.opacity = '0';
+                menu.style.visibility = 'hidden';
+                menu.style.transform = 'translateY(-10px)';
+            });
+        }
     }
 });
 
@@ -114,29 +165,31 @@ backToTopBtn.addEventListener('click', () => {
 });
 
 // FAQ Toggle
-faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        const icon = question.querySelector('i');
-        
-        // Toggle current FAQ
-        answer.classList.toggle('active');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
-        
-        // Close other FAQs
-        faqQuestions.forEach(otherQuestion => {
-            if (otherQuestion !== question) {
-                const otherAnswer = otherQuestion.nextElementSibling;
-                const otherIcon = otherQuestion.querySelector('i');
-                
-                otherAnswer.classList.remove('active');
-                otherIcon.classList.remove('fa-chevron-up');
-                otherIcon.classList.add('fa-chevron-down');
-            }
+if (faqQuestions.length > 0) {
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('i');
+            
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+            
+            // Close other FAQs
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    const otherAnswer = otherQuestion.nextElementSibling;
+                    const otherIcon = otherQuestion.querySelector('i');
+                    
+                    otherAnswer.classList.remove('active');
+                    otherIcon.classList.remove('fa-chevron-up');
+                    otherIcon.classList.add('fa-chevron-down');
+                }
+            });
         });
     });
-});
+}
 
 // Set current year in footer
 if (currentYearSpan) {
@@ -175,19 +228,19 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         const linkPage = link.getAttribute('href');
         
+        // Remove active class from all links first
+        link.classList.remove('active');
+        
         // Check if this link matches the current page
         if (currentPage === linkPage || 
             (currentPage === '' && linkPage === 'index.html') ||
             (linkPage === 'services.html' && 
              ['equipment.html', 'consumables.html', 'maintenance.html', 'consultancy.html'].includes(currentPage))) {
             
-            // Remove active class from all links
-            navLinks.forEach(l => l.classList.remove('active'));
-            
             // Add active class to current link
             link.classList.add('active');
             
-            // If it's a service page, also activate the services dropdown
+            // If it's a service page, also activate the services dropdown parent
             if (['equipment.html', 'consumables.html', 'maintenance.html', 'consultancy.html'].includes(currentPage)) {
                 const servicesLink = document.querySelector('.nav-link[href="services.html"]');
                 if (servicesLink) {
@@ -244,7 +297,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
-            if (this.type === 'submit' || this.href === '#') {
+            // Only for submit buttons or buttons with href="#"
+            if (this.type === 'submit' || this.getAttribute('href') === '#') {
+                e.preventDefault();
+                
                 // Add loading animation
                 const originalText = this.innerHTML;
                 this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
@@ -277,3 +333,51 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+// Handle window resize
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        // On resize, reset dropdown states
+        if (window.innerWidth > 768) {
+            // Reset mobile-specific states
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('active');
+            });
+        } else {
+            // On mobile, ensure CSS styles are reset
+            dropdowns.forEach(dropdown => {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                menu.style.opacity = '';
+                menu.style.visibility = '';
+                menu.style.transform = '';
+            });
+        }
+    }, 250);
+});
+
+// Touch support for mobile dropdowns
+document.addEventListener('touchstart', function(e) {
+    if (window.innerWidth <= 768) {
+        const dropdownToggle = e.target.closest('.dropdown-toggle');
+        if (dropdownToggle) {
+            const dropdown = dropdownToggle.closest('.dropdown');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            // Toggle the dropdown
+            menu.classList.toggle('active');
+            
+            // Close other dropdowns
+            document.querySelectorAll('.dropdown-menu.active').forEach(otherMenu => {
+                if (otherMenu !== menu) {
+                    otherMenu.classList.remove('active');
+                }
+            });
+            
+            e.preventDefault();
+        }
+    }
+}, { passive: false });
