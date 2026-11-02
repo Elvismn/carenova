@@ -139,3 +139,4 @@ This is a company website project. For contributions or improvements:
 - Font Awesome for icons
 - Google Fonts for typography
 - All healthcare partners and clients for their trust and collaboration
+- Moses, the foreseer of the above project.
