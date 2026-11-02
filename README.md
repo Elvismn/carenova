@@ -119,7 +119,8 @@ Since this is a static website, you can:
 - **Address**: Topmark House, Buruburu, Nairobi, Kenya
 - **Phone**: +254 718 395 508
 - **Email**: info@carenovabiotech.com / sales@carenovabiotech.com
-- **Website**: https://www.carenovabiotech.com
+- **Proposed Website**: https://www.carenovabiotech.com
+- **Current website**: https://carenova.netlify.app
 
 ## Contributing
 
